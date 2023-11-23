@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Marcellus", "serif";
+}
+
+body main {
+  background: rgb(222, 222, 222);
+  width: 100%;
+  height: 950px;
+}
+body main .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main .container form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 85%;
+  box-shadow: 0 0 10px 0;
+  padding: 20px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin: 20px;
+  border-radius: 5px;
+}
+body main .container form .inputGroup {
+  display: flex;
+  gap: 50px;
+}
+body main .container form .inputGroup .form-group label {
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+body main .container form .inputGroup .form-group label:hover {
+  font-size: 17px;
+  color: green;
+  text-shadow: 0 0 1px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+body main .container form .inputGroup .form-group input {
+  width: 400px;
+  box-shadow: 0 0 5px 0;
+  font-weight: 500;
+  transition: background-color 1s ease, width 0.4s ease, box-shadow 0.3s ease;
+}
+body main .container form .inputGroup .form-group input:hover {
+  transition: background-color 1s ease, width 0.4s ease, box-shadow 0.3s ease;
+  width: 410px;
+  background-color: rgb(240, 240, 240);
+  box-shadow: 0 0 6px 0 blue;
+  font-weight: 500;
+}
+body main .container form .inputGroup .form-group input:hover::placeholder {
+  color: rgba(128, 128, 128, 0.281);
+}
+body main .container form .inputGroup .form-group input:focus::placeholder {
+  color: gray;
+}
+body main .container form button {
+  width: 20%;
+}
